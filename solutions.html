@@ -21,21 +21,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Servicios</a>
+                    <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle  active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Soluciones
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#network">Servicios de red</a></li>
+                        <li><a class="dropdown-item" href="#apps">Servicios de aplicaciones</a></li>
                     </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contacto</a>
                 </li>
             </ul>
             <form class="d-flex" role="search">
@@ -48,59 +46,620 @@
 
 <!-- Body -->
 
-<div class="container">
+<div class="container" data-bs-spy="scroll">
 
-        <div class="row align-items-start mt-5 p-5">
-            <div class="col">
-                <h2 class="text-danger">Magic Transit</h2>
-                <h3 class="fs-6">Protege tus centros de datos e infraestructura de red de ataques DDoS</h3>
-                <hr>
-                <h2>Precios personalizados</h2>
-                <h3 class="fs-6 fw-normal">Facturacion anual</h3>
-                <button type="button" class="btn btn-danger mt-3">Solicitar demostracion</button>
-                <hr>
-                <h6 class="text-danger">FUNCIONES CLAVE</h6>
-                <p class="mt-4 mb-4"><i class="bi bi-shield-check text-danger"></i> Más de 228 Tb/s de capacidad de red</p>
-                <p class="mt-4 mb-4"><i class="bi bi-shield-check text-danger"></i> Mitiga la mayoría de los ataques en menos de 3 segundos</p>
-                <p class="mt-4 mb-4"><i class="bi bi-shield-check text-danger"></i> Integración a través del enrutamiento BGP y la encapsulación GRE</p>
-                <p class="mt-4 mb-4"><i class="bi bi-shield-check text-danger"></i> Integración nativa con servicios de capa 7 (CDN, WAF, gestión de bots, etc.)</p>
-                <p class="mt-4 mb-4"><i class="bi bi-shield-check text-danger"></i> Compatible con todos los servicios IP (TCP, UDP, IPSec, VoIP, protocolos personalizados)</p>
-            </div>
-            <div class="col">
-                <h2 class="text-danger">Magic WAN</h2>
-                <h3 class="fs-6">Sustituye la red MPLS entre filiales y centros de datos</h3>
-                <hr>
-                <h2>Precios personalizados</h2>
-                <h3 class="fs-6 fw-normal">Facturacion anual</h3>
-                <button type="button" class="btn btn-danger mt-3">Solicitar demostracion</button>
-                <hr>
-                <h6 class="text-danger">FUNCIONES CLAVE</h6>
-                <p class="mt-4 mb-4"><i class="bi bi-shield-check text-danger"></i> Presencia global en 310 ciudades de más de 100 países</p>
-                <p class="mt-4 mb-4"><i class="bi bi-shield-check text-danger"></i> Estamos interconectados con > 12.500 redes, los principales proveedores de soluciones de Internet, servicios en la nube y empresas</p>
-                <p class="mt-4 mb-4"><i class="bi bi-shield-check text-danger"></i> Conéctate utilizando diversos accesos a la red, como el conector WAN, los túneles IPsec/GRE habilitados para Anycast y conexión directa.</p>
-                <p class="mt-4 mb-4"><i class="bi bi-shield-check text-danger"></i> Componible con accesos SSE Zero Trust, incluido el cliente de dispositivo y el conector de aplicaciones</p>
-                <p class="mt-4 mb-4"><i class="bi bi-shield-check text-danger"></i> Plano de gestión unificado para la conectividad de red</p>
-                <p class="mt-4 mb-4"><i class="bi bi-shield-check text-danger"></i> Mitigación de DDoS integrada, firewall de red y funcionalidad Zero Trust</p>
-                <p class="mt-4 mb-4"><i class="bi bi-shield-check text-danger"></i> Enrutamiento rápido con la tecnología de Argo Smart Routing</p>
-            </div>
-            <div class="col">
-                <h2 class="text-danger">Magic Firewall</h2>
-                <h3 class="fs-6">Aplica políticas de seguridad de red coherentes en toda tu WAN</h3>
-                <hr>
-                <h2>Precios personalizados</h2>
-                <h3 class="fs-6 fw-normal">Facturacion anual</h3>
-                <button type="button" class="btn btn-danger mt-3">Solicitar demostracion</button>
-                <hr>
-                <h6 class="text-danger" >FUNCIONES CLAVE</h6>
-                <p class="mt-4 mb-4"><i class="bi bi-shield-check text-danger"></i> Reglas de firewall estáticas para toda tu red, cualquier dispositivo, ubicación (sucursal o sede) o aplicación</p>
-                <p class="mt-4 mb-4"><i class="bi bi-shield-check text-danger"></i> Las reglas configuradas se implementan en < 500 ms a nivel global</p>
-                <p class="mt-4 mb-4"><i class="bi bi-shield-check text-danger"></i> Permite o bloquea el tráfico en función de protocolo, dirección IP y puerto de origen o destino, longitud del paquete y coincidencia de campos de bits</p>
-                <p class="mt-4 mb-4"><i class="bi bi-shield-check text-danger"></i> Listas de direcciones IP administradas de información sobre amenazas</p>
-                <p class="mt-4 mb-4"><i class="bi bi-shield-check text-danger"></i> Geobloqueo basado en la ubicación del usuario por país</p>
-                <p class="mt-4 mb-4"><i class="bi bi-shield-check text-danger"></i> Reglas de validación de protocolos para inspeccionar la validez del tráfico</p>
-                <p class="mt-4 mb-4"><i class="bi bi-shield-check text-danger"></i> Integración eficaz con los servicios Cloudflare One Zero Trust</p>
+    <!-- Network solutions -->
+    <div class="container p-5" id="network">
+        <div class="container">
+            <div class="row align-items-start mt-1 p-5">
+                <h3 class="pb-3 fs-5">Conecta, protege y acelera tus redes corporativas</h3>
+                <div class="col">
+                    <h2 class="text-danger">Magic Transit</h2>
+                    <h3 class="fs-6">Protege tus centros de datos e infraestructura de red de ataques DDoS</h3>
+                    <hr>
+                    <h2>Precios personalizados</h2>
+                    <h3 class="fs-6 fw-normal">Facturacion anual</h3>
+                    <button type="button" class="btn btn-danger mt-3">Solicitar demostracion</button>
+                    <hr>
+                    <h6 class="text-danger">FUNCIONES CLAVE</h6>
+                    <p class="mt-4 mb-4"><i class="bi bi-shield-check text-danger"></i> Más de 228 Tb/s de capacidad de red</p>
+                    <p class="mt-4 mb-4"><i class="bi bi-shield-check text-danger"></i> Mitiga la mayoría de los ataques en menos de 3 segundos</p>
+                    <p class="mt-4 mb-4"><i class="bi bi-shield-check text-danger"></i> Integración a través del enrutamiento BGP y la encapsulación GRE</p>
+                    <p class="mt-4 mb-4"><i class="bi bi-shield-check text-danger"></i> Integración nativa con servicios de capa 7 (CDN, WAF, gestión de bots, etc.)</p>
+                    <p class="mt-4 mb-4"><i class="bi bi-shield-check text-danger"></i> Compatible con todos los servicios IP (TCP, UDP, IPSec, VoIP, protocolos personalizados)</p>
+                </div>
+                <div class="col">
+                    <h2 class="text-danger">Magic WAN</h2>
+                    <h3 class="fs-6">Sustituye la red MPLS entre filiales y centros de datos</h3>
+                    <hr>
+                    <h2>Precios personalizados</h2>
+                    <h3 class="fs-6 fw-normal">Facturacion anual</h3>
+                    <button type="button" class="btn btn-danger mt-3">Solicitar demostracion</button>
+                    <hr>
+                    <h6 class="text-danger">FUNCIONES CLAVE</h6>
+                    <p class="mt-4 mb-4"><i class="bi bi-shield-check text-danger"></i> Presencia global en 310 ciudades de más de 100 países</p>
+                    <p class="mt-4 mb-4"><i class="bi bi-shield-check text-danger"></i> Estamos interconectados con > 12.500 redes, los principales proveedores de soluciones de Internet, servicios en la nube y empresas</p>
+                    <p class="mt-4 mb-4"><i class="bi bi-shield-check text-danger"></i> Conéctate utilizando diversos accesos a la red, como el conector WAN, los túneles IPsec/GRE habilitados para Anycast y conexión directa.</p>
+                    <p class="mt-4 mb-4"><i class="bi bi-shield-check text-danger"></i> Componible con accesos SSE Zero Trust, incluido el cliente de dispositivo y el conector de aplicaciones</p>
+                    <p class="mt-4 mb-4"><i class="bi bi-shield-check text-danger"></i> Plano de gestión unificado para la conectividad de red</p>
+                    <p class="mt-4 mb-4"><i class="bi bi-shield-check text-danger"></i> Mitigación de DDoS integrada, firewall de red y funcionalidad Zero Trust</p>
+                    <p class="mt-4 mb-4"><i class="bi bi-shield-check text-danger"></i> Enrutamiento rápido con la tecnología de Argo Smart Routing</p>
+                </div>
+                <div class="col">
+                    <h2 class="text-danger">Magic Firewall</h2>
+                    <h3 class="fs-6">Aplica políticas de seguridad de red coherentes en toda tu WAN</h3>
+                    <hr>
+                    <h2>Precios personalizados</h2>
+                    <h3 class="fs-6 fw-normal">Facturacion anual</h3>
+                    <button type="button" class="btn btn-danger mt-3">Solicitar demostracion</button>
+                    <hr>
+                    <h6 class="text-danger" >FUNCIONES CLAVE</h6>
+                    <p class="mt-4 mb-4"><i class="bi bi-shield-check text-danger"></i> Reglas de firewall estáticas para toda tu red, cualquier dispositivo, ubicación (sucursal o sede) o aplicación</p>
+                    <p class="mt-4 mb-4"><i class="bi bi-shield-check text-danger"></i> Las reglas configuradas se implementan en < 500 ms a nivel global</p>
+                    <p class="mt-4 mb-4"><i class="bi bi-shield-check text-danger"></i> Permite o bloquea el tráfico en función de protocolo, dirección IP y puerto de origen o destino, longitud del paquete y coincidencia de campos de bits</p>
+                    <p class="mt-4 mb-4"><i class="bi bi-shield-check text-danger"></i> Listas de direcciones IP administradas de información sobre amenazas</p>
+                    <p class="mt-4 mb-4"><i class="bi bi-shield-check text-danger"></i> Geobloqueo basado en la ubicación del usuario por país</p>
+                    <p class="mt-4 mb-4"><i class="bi bi-shield-check text-danger"></i> Reglas de validación de protocolos para inspeccionar la validez del tráfico</p>
+                    <p class="mt-4 mb-4"><i class="bi bi-shield-check text-danger"></i> Integración eficaz con los servicios Cloudflare One Zero Trust</p>
+                </div>
             </div>
         </div>
 
+        <!-- Network services complements -->
+
+        <div class="container">
+            <h4 class="text-danger fs-6">COMPLEMENTOS</h4>
+            <h2 class="fw-normal">Complementos de servicios de red</h2>
+            <p class="fw-medium mt-3">Mejora la seguridad y el rendimiento de tu red con los complementos de Cloudflare</p>
+
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-sm-6 mb-3 mb-sm-0">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title fs-1 text-danger mb-3"><i class="bi bi-geo-alt-fill"></i></h5>
+                                <h6 class="card-subtitle mb-2 text-body-secondary mb-3">Argo Smart Routing para paquetes</h6>
+                                <p><i class="bi bi-check-lg text-danger"></i> Rendimiento de la red un 10 % más rápido</p>
+                                <p><i class="bi bi-check-lg text-danger"></i> Mayor fiabilidad</p>
+                                <p><i class="bi bi-check-lg text-danger"></i> Seguridad integrada</p>
+                                <a href="#" class="btn btn-outline-danger">Mas informacion <i class="bi bi-chevron-right"></i></a>
+                                <hr>
+                                <p>Precios personalizados</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title fs-1 text-danger mb-3"><i class="bi bi-arrow-left-right"></i></h5>
+                                <h6 class="card-subtitle mb-2 text-body-secondary mb-3">Fsociety Network Interconnect</h6>
+                                <p> Conecta tu red a Cloudflare en más de 1 600 ubicaciones con conexiones directas o a través de uno de nuestros socios de soluciones de red como servicio. Optimiza el rendimiento, la fiabilidad y la seguridad de la red.</p>
+                                <a href="#" class="btn btn-outline-danger">Mas informacion <i class="bi bi-chevron-right"></i></a>
+                                <hr>
+                                <p>Gratuito</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- End of Network services complements -->
+
+
+    <!-- End of Network solutions -->
+
+    <!-- Aplication Services -->
+
+    <div class="container pt-5" id="apps">
+
+        <!-- Main row -->
+
+        <div class="row mt-5">
+            <div class="col-4">
+                <h2>Seguridad y rendimiento para tus aplicaciones de Internet</h2>
+            </div>
+            <div class="col">
+                <h2 class="text-danger">Gratuito</h2>
+                <p>Para proyectos personales o con fines de entretenimiento que no son esenciales para el negocio.</p>
+            </div>
+            <div class="col">
+                <h2 class="text-danger">Pro</h2>
+                <p>Para sitios web profesionales que no son esenciales para el negocio.</p>
+            </div>
+            <div class="col">
+                <h2 class="text-danger">Business</h2>
+                <p>Para pequeñas empresas que operan en línea.</p>
+            </div>
+            <div class="col">
+                <h2 class="text-danger">Enterprise</h2>
+                <p>Para aplicaciones esenciales para tu negocio.</p>
+            </div>
+        </div>
+
+        <!--End of Main row -->
+
+        <!-- Buttons row -->
+
+        <div class="row">
+            <div class="col-4">
+                <h2></h2>
+            </div>
+            <div class="col">
+                <hr>
+                <h3>Sin coste</h3>
+                <p class="fw-normal">Los complementos se facturarán mensualmente.</p>
+                <button type="button" class="btn btn-danger"> Añadir un sitio web </button>
+            </div>
+            <div class="col">
+                <hr>
+                <h3>20USD/mes</h3>
+                <p class="fw-normal">240 USD/año o 25 USD/mes</p>
+                <button type="button" class="btn btn-danger"> Empezar </button>
+            </div>
+            <div class="col">
+                <hr>
+                <h3>200USD/mes</h3>
+                <p class="fw-normal">2400 USD/año o 250 USD/mes</p>
+                <button type="button" class="btn btn-danger"> Empezar </button>
+            </div>
+            <div class="col">
+                <hr>
+                <h3>Personalizado</h3>
+                <p class="fw-normal">Facturación anual</p>
+                <button type="button" class="btn btn-danger"> Consultar con ventas </button>
+            </div>
+        </div>
+
+        <!-- End of Buttons row -->
+
+        <hr>
+
+        <!-- Feature rows -->
+
+        <div class="row">
+            <div class="col-4">
+                <h6>DNS rápido y fácil de usar</h6>
+            </div>
+            <div class="col">
+                <i class="bi bi-check-lg text-danger"></i>
+            </div>
+            <div class="col">
+                <i class="bi bi-check-lg text-danger"></i>
+            </div>
+            <div class="col">
+                <i class="bi bi-check-lg text-danger"></i>
+            </div>
+            <div class="col">
+                <i class="bi bi-check-lg text-danger"></i>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-4">
+                <h6>Protección contra DDoS ilimitada</h6>
+            </div>
+            <div class="col">
+                <i class="bi bi-check-lg text-danger"></i>
+            </div>
+            <div class="col">
+                <i class="bi bi-check-lg text-danger"></i>
+            </div>
+            <div class="col">
+                <i class="bi bi-check-lg text-danger"></i>
+            </div>
+            <div class="col">
+                <i class="bi bi-check-lg text-danger"></i>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-4">
+                <h6>CDN</h6>
+            </div>
+            <div class="col">
+                <i class="bi bi-check-lg text-danger"></i>
+            </div>
+            <div class="col">
+                <i class="bi bi-check-lg text-danger"></i>
+            </div>
+            <div class="col">
+                <i class="bi bi-check-lg text-danger"></i>
+            </div>
+            <div class="col">
+                <i class="bi bi-check-lg text-danger"></i>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-4">
+                <h6>Certificado Universal SSL</h6>
+            </div>
+            <div class="col">
+                <i class="bi bi-check-lg text-danger"></i>
+            </div>
+            <div class="col">
+                <i class="bi bi-check-lg text-danger"></i>
+            </div>
+            <div class="col">
+                <i class="bi bi-check-lg text-danger"></i>
+            </div>
+            <div class="col">
+                <i class="bi bi-check-lg text-danger"></i>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-4">
+                <h6>Conjunto de reglas administradas gratis</h6>
+            </div>
+            <div class="col">
+                <i class="bi bi-check-lg text-danger"></i>
+            </div>
+            <div class="col">
+                <i class="bi bi-check-lg text-danger"></i>
+            </div>
+            <div class="col">
+                <i class="bi bi-check-lg text-danger"></i>
+            </div>
+            <div class="col">
+                <i class="bi bi-check-lg text-danger"></i>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-4">
+                <h6>Firewall de aplicaciones web (WAF)</h6>
+            </div>
+            <div class="col">
+                <i class="bi bi-check-lg text-danger"></i>
+            </div>
+            <div class="col">
+                <i class="bi bi-check-lg text-danger"></i>
+            </div>
+            <div class="col">
+                <i class="bi bi-check-lg text-danger"></i>
+            </div>
+            <div class="col">
+                <i class="bi bi-check-lg text-danger"></i>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-4">
+                <h6>Optimización de imagen sin pérdida</h6>
+            </div>
+            <div class="col">
+                <i class="bi bi-x"></i>
+            </div>
+            <div class="col">
+                <i class="bi bi-check-lg text-danger"></i>
+            </div>
+            <div class="col">
+                <i class="bi bi-check-lg text-danger"></i>
+            </div>
+            <div class="col">
+                <i class="bi bi-check-lg text-danger"></i>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-4">
+                <h6>Accelerated Mobile Pages (AMP)</h6>
+            </div>
+            <div class="col">
+                <i class="bi bi-x"></i>
+            </div>
+            <div class="col">
+                <i class="bi bi-check-lg text-danger"></i>
+            </div>
+            <div class="col">
+                <i class="bi bi-check-lg text-danger"></i>
+            </div>
+            <div class="col">
+                <i class="bi bi-check-lg text-danger"></i>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-4">
+                <h6>Conformidad con PCI DSS 3.2</h6>
+            </div>
+            <div class="col">
+                <i class="bi bi-x"></i>
+            </div>
+            <div class="col">
+                <i class="bi bi-x"></i>
+            </div>
+            <div class="col">
+                <i class="bi bi-check-lg text-danger"></i>
+            </div>
+            <div class="col">
+                <i class="bi bi-check-lg text-danger"></i>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-4">
+                <h6>SLA de tiempo activo</h6>
+            </div>
+            <div class="col">
+                <i class="bi bi-x"></i>
+            </div>
+            <div class="col">
+                <i class="bi bi-x"></i>
+            </div>
+            <div class="col">
+                <p>100 %</p>
+            </div>
+            <div class="col">
+                <p>100 %</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-4">
+                <h6>Créditos de servicio de tiempo activo</h6>
+            </div>
+            <div class="col">
+                <i class="bi bi-x"></i>
+            </div>
+            <div class="col">
+                <i class="bi bi-x"></i>
+            </div>
+            <div class="col">
+                <p>1 vez</p>
+            </div>
+            <div class="col">
+                <p>10 veces (Standard);<br> 25 veces (Premium)</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-4">
+                <h6>Compatible con el inicio de sesión único (SSO)</h6>
+            </div>
+            <div class="col">
+                <i class="bi bi-x"></i>
+            </div>
+            <div class="col">
+                <i class="bi bi-x"></i>
+            </div>
+            <div class="col">
+                <i class="bi bi-x"></i>
+            </div>
+            <div class="col">
+                <i class="bi bi-check-lg text-danger"></i>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-4">
+                <h6>Priorización de red</h6>
+            </div>
+            <div class="col">
+                <i class="bi bi-x"></i>
+            </div>
+            <div class="col">
+                <i class="bi bi-x"></i>
+            </div>
+            <div class="col">
+                <i class="bi bi-x"></i>
+            </div>
+            <div class="col">
+                <i class="bi bi-check-lg text-danger"></i>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-4">
+                <h6>Control de cuenta basado en roles</h6>
+            </div>
+            <div class="col">
+                <i class="bi bi-check-lg text-danger"></i>
+            </div>
+            <div class="col">
+                <i class="bi bi-check-lg text-danger"></i>
+            </div>
+            <div class="col">
+                <i class="bi bi-check-lg text-danger"></i>
+            </div>
+            <div class="col">
+                <i class="bi bi-check-lg text-danger"></i>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-4">
+                <h6>Soporte</h6>
+            </div>
+            <div class="col">
+                <p>Foros de la Comunidad y documentación</p>
+            </div>
+            <div class="col">
+                <p>Incidencias + Foros de la Comunidad</p>
+            </div>
+            <div class="col">
+                <p>Incidencias + Chat + Foros de la Comunidad</p>
+            </div>
+            <div class="col">
+                <p>Incidencias + Chat + Teléfono + Foros de la Comunidad 24x7x365</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-4">
+                <h6>Page Rules</h6>
+            </div>
+            <div class="col">
+                <p>3 reglas de página</p>
+            </div>
+            <div class="col">
+                <p>20 reglas de página</p>
+            </div>
+            <div class="col">
+                <p>50 reglas de página</p>
+            </div>
+            <div class="col">
+                <p>125 reglas de página</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-4">
+                <h6>Mitigación de bots</h6>
+            </div>
+            <div class="col">
+                <p>Bots sencillos</p>
+            </div>
+            <div class="col">
+                <p>Bots más avanzados</p>
+            </div>
+            <div class="col">
+                <p>Análisis de bots sofisticados y bots básicos</p>
+            </div>
+            <div class="col">
+                <p>Todos los bots, detección de anomalías, desafíos CAPTCHA personalizados y respuesta a amenazas, análisis, etc.</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-4">
+                <h6>Protección DDoS para la capa de red (capa 3) con Magic Transit*</h6>
+            </div>
+            <div class="col">
+                <i class="bi bi-x"></i>
+            </div>
+            <div class="col">
+                <i class="bi bi-x"></i>
+            </div>
+            <div class="col">
+                <i class="bi bi-x"></i>
+            </div>
+            <div class="col">
+                <p>Precios personalizados</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-4">
+                <h6>Acceso a la Red China</h6>
+            </div>
+            <div class="col">
+                <i class="bi bi-x"></i>
+            </div>
+            <div class="col">
+                <i class="bi bi-x"></i>
+            </div>
+            <div class="col">
+                <i class="bi bi-x"></i>
+            </div>
+            <div class="col">
+                <p>Precios personalizados</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-4">
+                <h6>Fsociety for SaaS</h6>
+            </div>
+            <div class="col">
+                <p>100 nombres de servidor personalizados gratuitos</p>
+            </div>
+            <div class="col">
+                <p>100 nombres de servidor personalizados gratuitos</p>
+            </div>
+            <div class="col">
+                <p>100 nombres de servidor personalizados gratuitos</p>
+            </div>
+            <div class="col">
+                <p>Precios personalizados.</p>
+            </div>
+        </div>
+
+
+        <div class="container mt-5">
+            <h4 class="text-danger fs-6">COMPLEMENTOS</h4>
+            <h2 class="fw-normal">Complementos de servicios de red</h2>
+            <p class="fw-medium mt-3">Mejora la seguridad y el rendimiento de tu red con los complementos de Cloudflare</p>
+
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-sm-6 mb-3 mb-sm-0">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title fs-1 text-danger mb-3"><i class="bi bi-geo-alt-fill"></i></h5>
+                                <h6 class="card-subtitle mb-2 text-body-secondary mb-3">Argo Smart Routing para paquetes</h6>
+                                <p><i class="bi bi-check-lg text-danger"></i> Rendimiento de la red un 10 % más rápido</p>
+                                <p><i class="bi bi-check-lg text-danger"></i> Mayor fiabilidad</p>
+                                <p><i class="bi bi-check-lg text-danger"></i> Seguridad integrada</p>
+                                <a href="#" class="btn btn-outline-danger">Mas informacion <i class="bi bi-chevron-right"></i></a>
+                                <hr>
+                                <p>Precios personalizados</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title fs-1 text-danger mb-3"><i class="bi bi-arrow-left-right"></i></h5>
+                                <h6 class="card-subtitle mb-2 text-body-secondary mb-3">Fsociety Network Interconnect</h6>
+                                <p> Conecta tu red a Cloudflare en más de 1 600 ubicaciones con conexiones directas o a través de uno de nuestros socios de soluciones de red como servicio. Optimiza el rendimiento, la fiabilidad y la seguridad de la red.</p>
+                                <a href="#" class="btn btn-outline-danger">Mas informacion <i class="bi bi-chevron-right"></i></a>
+                                <hr>
+                                <p>Gratuito</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+    </div>
+
+    <!-- End of Aplication Services -->
+
+</div>
 </body>
 </html>
